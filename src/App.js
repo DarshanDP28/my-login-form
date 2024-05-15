@@ -5,6 +5,7 @@ const generateStars = (length) => {
     return '*'.repeat(length);
 }
 
+
 const App = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
@@ -12,7 +13,7 @@ const App = () => {
 
     return (
         
-        <div className="container">
+        <div className="container" id="loginwindow">
             <input
                 type="text"
                 placeholder="Enter Username"
@@ -30,6 +31,7 @@ const App = () => {
             <h2>{showPassword ? (password.length > 0 ? generateStars(password.length) : '') : password}</h2>
             <button onClick={(e) => setShowPassword(!showPassword)}>Show/Hide password</button>
         </div>
+        
     );
 }
 

@@ -14,6 +14,10 @@
   flex-direction: column;
 }
 
+body{
+  background-color: #ffe5b4;
+}
+
 input {
   outline: 0;
   width:100%; 
@@ -29,7 +33,7 @@ input {
 
 button {
   padding: 2% 5%;
-  background-color: #e7ae90;
+  background-color: #ffb347;
   border-radius: 0.3rem;
   outline: 0;
 }
